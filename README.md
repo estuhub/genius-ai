@@ -48,3 +48,6 @@ Create an account in [openai.com](https://openai.com/).
 For API [documentation](https://platform.openai.com/docs/overview.).
 For npm package [documentation](https://www.npmjs.com/package/openai).
 To install: `npm i openai`
+
+## HTTPS Requests Management: Axios
+A simple, promise-based HTTP client for making requests to a RESTful API. For more info, check [documentation](https://axios-http.com/docs/intro).
