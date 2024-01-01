@@ -51,3 +51,6 @@ To install: `npm i openai`
 
 ## HTTPS Requests Management: Axios
 A simple, promise-based HTTP client for making requests to a RESTful API. For more info, check [documentation](https://axios-http.com/docs/intro).
+
+## react-markdown
+A React component that parses markdown and renders it to HTML. For more info, check [documentation](https://www.npmjs.com/package/react-markdown).
