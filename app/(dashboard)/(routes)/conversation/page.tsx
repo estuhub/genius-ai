@@ -15,6 +15,9 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Empty } from "@/components/empty"
 import { Loader } from "@/components/loader"
+import { UserAvatar } from "@/components/user-avatar"
+import { BotAvatar } from "@/components/bot-avatar"
+import { cn } from "@/lib/utils"
 
 import { formSchema } from "./constants"
 
@@ -56,7 +59,13 @@ const ConversationPage = () => {
 
     return (
         <div>
-            <Heading title={"Conversation"} description={"Our most advanced conversation model."} icon={MessageSquare} iconColor="text-violet-500" bgColor="bg-violet-500/10" />
+            <Heading
+                title={"Conversation"}
+                description={"Our most advanced conversation model."}
+                icon={MessageSquare}
+                iconColor="text-violet-500"
+                bgColor="bg-violet-500/10"
+            />
             <div className="px-4 lg:px-8">
                 <div>
                     <Form {...form}>
@@ -95,12 +104,21 @@ const ConversationPage = () => {
                     )}
                     <div className="flex flex-col-reverse gap-y-4">
                         {messages.map((message, i) => (
-                            <div key={i}>
-                                {Array.isArray(message.content)
-                                    ? message.content.map((part, j) => (
-                                        <span key={j}>{part.type}</span>
-                                        ))
-                                    : message.content}
+                            <div
+                                key={i}
+                                className={cn(
+                                    "p-8 w-full flex items-start gap-x-8 rounded-lg",
+                                    message.role === "user" ? "bg-white border border-black/10" : "bg-muted"
+                                )}
+                            >
+                                {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
+                                <p className="text-sm">
+                                    {Array.isArray(message.content)
+                                        ? message.content.map((part, j) => (
+                                            <span key={j}>{part.type}</span>
+                                            ))
+                                        : message.content}
+                                </p>
                             </div>
                         ))}
                     </div>
