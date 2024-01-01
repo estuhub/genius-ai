@@ -28,4 +28,4 @@ export async function POST(
         console.log("[CONVERSATION_ERROR]", error)
         return new NextResponse("Internal error", { status: 500 })
     }
-
+}
