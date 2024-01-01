@@ -54,3 +54,11 @@ A simple, promise-based HTTP client for making requests to a RESTful API. For mo
 
 ## react-markdown
 A React component that parses markdown and renders it to HTML. For more info, check [documentation](https://www.npmjs.com/package/react-markdown).
+
+## replicate
+Create an account in [replicate.com](https://replicate.com/)
+For API [documentation](https://replicate.com/docs).
+For npm package [documentation](https://www.npmjs.com/package/replicate).
+To install: `npm i replicate`
+To choose the audio generation API, go to Explore --> Audio Generation --> [Riffusion](https://replicate.com/riffusion/riffusion/api?tab=nodejs) and follow the commands.
+
