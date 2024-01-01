@@ -66,6 +66,7 @@ const Sidebar = () => {
                             fill
                             alt="Logo"
                             src="/logo.png"
+                            sizes="w-8 h-8"
                         />
                     </div>
                     <h1 className={cn("text-2xl font-bold", monserrat.className)}>
