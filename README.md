@@ -42,3 +42,9 @@ For reusable NextJS components. For more info, check [documentation](https://ui.
 
 ## Authetincation: Clerk
 Security and authentications handled by a third party company. For more info, check  the [documentation](https://clerk.com/docs).
+
+## AI: openai
+Create an account in [openai.com](https://openai.com/).
+For API [documentation](https://platform.openai.com/docs/overview.).
+For npm package [documentation](https://www.npmjs.com/package/openai).
+To install: `npm i openai`
