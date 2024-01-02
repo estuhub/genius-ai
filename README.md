@@ -44,9 +44,9 @@ For reusable NextJS components. For more info, check [documentation](https://ui.
 Security and authentications handled by a third party company. For more info, check  the [documentation](https://clerk.com/docs).
 
 ## AI: openai
-Create an account in [openai.com](https://openai.com/).
-For API [documentation](https://platform.openai.com/docs/overview.).
-For npm package [documentation](https://www.npmjs.com/package/openai).
+Create an account in [openai.com](https://openai.com/). \
+For API [documentation](https://platform.openai.com/docs/overview.). \
+For npm package [documentation](https://www.npmjs.com/package/openai). \
 To install: `npm i openai`
 
 ## HTTPS Requests Management: Axios
@@ -56,10 +56,23 @@ A simple, promise-based HTTP client for making requests to a RESTful API. For mo
 A React component that parses markdown and renders it to HTML. For more info, check [documentation](https://www.npmjs.com/package/react-markdown).
 
 ## replicate
-Create an account in [replicate.com](https://replicate.com/)
-For API [documentation](https://replicate.com/docs).
-For npm package [documentation](https://www.npmjs.com/package/replicate).
-To install: `npm i replicate`
+Create an account in [replicate.com](https://replicate.com/) \
+For API [documentation](https://replicate.com/docs). \
+For npm package [documentation](https://www.npmjs.com/package/replicate). \
+To install: `npm i replicate` \
 To choose the audio generation API, go to Explore --> Audio Generation --> [Riffusion](https://replicate.com/riffusion/riffusion/api?tab=nodejs) and follow the commands.
 
 To choose the video generation API, use the search and find [Zeroscope](https://replicate.com/anotherjesse/zeroscope-v2-xl?input=nodejs).
+
+## Database Management: Prisma & Prisma Client
+Simplify database access and management. For more info, check [documentation](https://www.prisma.io/docs). \
+To install: `npm i -D prisma @prisma/client` \
+To initialize: `npx prisma init` \
+To generate DB: `npx prisma generate` \
+To add/update schema in DB: `npx prisma db push` \
+To reset DB: `npx prisma migrate reset` \
+
+## Database: MongoDB
+For integration with [Prisma](https://www.prisma.io/docs/orm/overview/databases/mongodb#:~:text=Some%20aspects%20of%20using%20Prisma,using%20the%20mongodb%20database%20connector). \
+For prisma schema using MongoDB, check [documentation](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb/creating-the-prisma-schema-typescript-mongodb).
+
