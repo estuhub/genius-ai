@@ -62,3 +62,4 @@ For npm package [documentation](https://www.npmjs.com/package/replicate).
 To install: `npm i replicate`
 To choose the audio generation API, go to Explore --> Audio Generation --> [Riffusion](https://replicate.com/riffusion/riffusion/api?tab=nodejs) and follow the commands.
 
+To choose the video generation API, use the search and find [Zeroscope](https://replicate.com/anotherjesse/zeroscope-v2-xl?input=nodejs).
