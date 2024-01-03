@@ -78,3 +78,6 @@ For prisma schema using MongoDB, check [documentation](https://www.prisma.io/doc
 
 ## State Management: Zustand
 Library for React applications that provides a simple and flexible way to manage global state. For more info, check [documentation](https://docs.pmnd.rs/zustand/getting-started/introduction).
+
+## Payment Method: Stripe
+Create an account in their [website](https://stripe.com/en-th). And add the following package. For more info, check [documentation](https://www.npmjs.com/package/stripe).
