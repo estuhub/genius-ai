@@ -1,11 +1,13 @@
 "use client"
 
-import { cn } from "@/lib/utils"
 import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react"
 import { Montserrat } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+
+import { cn } from "@/lib/utils"
+import { FreeCounter } from "@/components/free-counter"
 
 // Import a font using NextJs and Google Font
 const monserrat = Montserrat({
@@ -57,7 +59,11 @@ const routes = [
     },
 ]
 
-const Sidebar = () => {
+interface SidebarProps {
+    apiLimitCount: number
+}
+
+const Sidebar = ({ apiLimitCount = 0 }: SidebarProps) => {
     const pathname = usePathname()
 
     return (
@@ -91,6 +97,9 @@ const Sidebar = () => {
                     ))}
                 </div>
             </div>
+            <FreeCounter
+                apiLimitCount={apiLimitCount}
+            />
         </div>
     )
 }
