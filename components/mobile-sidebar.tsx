@@ -6,7 +6,11 @@ import { useEffect, useState } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Sidebar from "./sidebar"
 
-const MobileSidebar = () => {
+interface MobileSidebarProps {
+    apiLimitCount: number
+}
+
+const MobileSidebar = ({apiLimitCount}: MobileSidebarProps) => {
     // Avoid hydration errors
     const [isMounted, setIsMounted] = useState(false)
     useEffect(() => { setIsMounted(true) }, [])
@@ -18,7 +22,7 @@ const MobileSidebar = () => {
                 <Menu className="md:hidden" />
             </SheetTrigger>
             <SheetContent side="left" className="p-0">
-                <Sidebar />
+                <Sidebar apiLimitCount={apiLimitCount} />
             </SheetContent>
         </Sheet>
     )
