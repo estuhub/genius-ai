@@ -7,10 +7,14 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Sidebar from "./sidebar"
 
 interface MobileSidebarProps {
-    apiLimitCount: number
+    apiLimitCount: number,
+    isPro: boolean,
 }
 
-const MobileSidebar = ({apiLimitCount}: MobileSidebarProps) => {
+const MobileSidebar = ({
+    apiLimitCount = 0,
+    isPro = false
+}: MobileSidebarProps) => {
     // Avoid hydration errors
     const [isMounted, setIsMounted] = useState(false)
     useEffect(() => { setIsMounted(true) }, [])
@@ -22,7 +26,10 @@ const MobileSidebar = ({apiLimitCount}: MobileSidebarProps) => {
                 <Menu className="md:hidden" />
             </SheetTrigger>
             <SheetContent side="left" className="p-0">
-                <Sidebar apiLimitCount={apiLimitCount} />
+                <Sidebar
+                    apiLimitCount={apiLimitCount}
+                    isPro={isPro}
+                />
             </SheetContent>
         </Sheet>
     )
