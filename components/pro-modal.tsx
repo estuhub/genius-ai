@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { useProModal } from "@/hooks/use-pro-modal"
-import { tools } from "@/app/(dashboard)/(routes)/dashboard/page"
+import { tools } from "@/lib/tools"
 import { cn } from "@/lib/utils"
 
 export const ProModal = () => {
