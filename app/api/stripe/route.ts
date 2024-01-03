@@ -18,6 +18,7 @@ export async function GET() {
             where: { userId }
         })
 
+        // Cancel or Upgrade the subscription
         if (userSubscription && userSubscription.stripeCustomerId) {
             const stripeSession = await stripe.billingPortal.sessions.create({
                 customer: userSubscription.stripeCustomerId,
@@ -26,6 +27,7 @@ export async function GET() {
             return new NextResponse(JSON.stringify({ url: stripeSession.url }))
         }
 
+        // Create subscription for the first time
         const stripeSession = await stripe.checkout.sessions.create({
             success_url: settingsUrl,
             cancel_url: settingsUrl,
