@@ -88,3 +88,6 @@ A simple React hook based toast notification library. For more info, check [docu
 ## Customer Service Chatbox: crisp
 Create an account in [crisp.chat](https://crisp.chat/en/). \
 For npm package [documentation](https://docs.crisp.chat/guides/chatbox-sdks/web-sdk/npm/). \
+
+## Typewritter: typewriter-effect
+For more info, check [documentation](https://www.npmjs.com/package/typewriter-effect).
