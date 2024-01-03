@@ -84,3 +84,7 @@ Create an account in their [website](https://stripe.com/en-th). And add the foll
 
 ## Error Handler: react-hot-toast
 A simple React hook based toast notification library. For more info, check [documentation](https://react-hot-toast.com/).
+
+## Customer Service Chatbox: crisp
+Create an account in [crisp.chat](https://crisp.chat/en/). \
+For npm package [documentation](https://docs.crisp.chat/guides/chatbox-sdks/web-sdk/npm/). \
