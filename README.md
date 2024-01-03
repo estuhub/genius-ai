@@ -76,3 +76,5 @@ To reset DB: `npx prisma migrate reset` \
 For integration with [Prisma](https://www.prisma.io/docs/orm/overview/databases/mongodb#:~:text=Some%20aspects%20of%20using%20Prisma,using%20the%20mongodb%20database%20connector). \
 For prisma schema using MongoDB, check [documentation](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb/creating-the-prisma-schema-typescript-mongodb).
 
+## State Management: Zustand
+Library for React applications that provides a simple and flexible way to manage global state. For more info, check [documentation](https://docs.pmnd.rs/zustand/getting-started/introduction).
