@@ -81,3 +81,6 @@ Library for React applications that provides a simple and flexible way to manage
 
 ## Payment Method: Stripe
 Create an account in their [website](https://stripe.com/en-th). And add the following package. For more info, check [documentation](https://www.npmjs.com/package/stripe).
+
+## Error Handler: react-hot-toast
+A simple React hook based toast notification library. For more info, check [documentation](https://react-hot-toast.com/).
